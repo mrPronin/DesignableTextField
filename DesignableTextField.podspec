@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DesignableTextField"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Custom IBDesignable View with title (UILabel) and UITextField"
 
   # This description is used to generate tags and improve search results.
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  IBDesignable View that profides ability to customize title label, text field and view properties from interface builder
                    DESC
 
   s.homepage     = "https://github.com/mrPronin"
@@ -90,7 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DesignableTextField/**/*.{swift}"
+  s.source_files  = "DesignableTextField/**/*.{h,m,swift}"
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.1' }
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
