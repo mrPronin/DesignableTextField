@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0966E08B1F4C61AF00059C3A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966E0881F4C61AF00059C3A /* StringExtension.swift */; };
+		0966E08C1F4C61AF00059C3A /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966E0891F4C61AF00059C3A /* UITextFieldExtension.swift */; };
+		0966E08D1F4C61AF00059C3A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966E08A1F4C61AF00059C3A /* UIViewExtension.swift */; };
+		0966E0901F4C61BE00059C3A /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966E08E1F4C61BE00059C3A /* DesignableTextField.swift */; };
+		0966E0911F4C61BE00059C3A /* DesignableTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0966E08F1F4C61BE00059C3A /* DesignableTextField.xib */; };
 		09D05CB91F4C5CDA00E8142D /* DesignableTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D05CB71F4C5CDA00E8142D /* DesignableTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0966E0881F4C61AF00059C3A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		0966E0891F4C61AF00059C3A /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		0966E08A1F4C61AF00059C3A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0966E08E1F4C61BE00059C3A /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		0966E08F1F4C61BE00059C3A /* DesignableTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignableTextField.xib; sourceTree = "<group>"; };
 		09D05CB41F4C5CDA00E8142D /* DesignableTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignableTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D05CB71F4C5CDA00E8142D /* DesignableTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableTextField.h; sourceTree = "<group>"; };
 		09D05CB81F4C5CDA00E8142D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +37,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0966E0861F4C619D00059C3A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0966E0871F4C619D00059C3A /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0966E0871F4C619D00059C3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0966E0881F4C61AF00059C3A /* StringExtension.swift */,
+				0966E0891F4C61AF00059C3A /* UITextFieldExtension.swift */,
+				0966E08A1F4C61AF00059C3A /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		09D05CAA1F4C5CDA00E8142D = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				09D05CB71F4C5CDA00E8142D /* DesignableTextField.h */,
+				0966E08E1F4C61BE00059C3A /* DesignableTextField.swift */,
+				0966E08F1F4C61BE00059C3A /* DesignableTextField.xib */,
+				0966E0861F4C619D00059C3A /* Helper */,
 				09D05CB81F4C5CDA00E8142D /* Info.plist */,
 			);
 			path = DesignableTextField;
@@ -122,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0966E0911F4C61BE00059C3A /* DesignableTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0966E08D1F4C61AF00059C3A /* UIViewExtension.swift in Sources */,
+				0966E08B1F4C61AF00059C3A /* StringExtension.swift in Sources */,
+				0966E08C1F4C61AF00059C3A /* UITextFieldExtension.swift in Sources */,
+				0966E0901F4C61BE00059C3A /* DesignableTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +332,7 @@
 				09D05CBE1F4C5CDA00E8142D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
