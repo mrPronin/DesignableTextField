@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DesignableTextField"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Custom IBDesignable View with title (UILabel) and UITextField"
 
   # This description is used to generate tags and improve search results.
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "DesignableTextField/**/*.{h,m,swift}"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.1' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

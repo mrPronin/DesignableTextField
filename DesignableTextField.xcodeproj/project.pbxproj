@@ -13,6 +13,8 @@
 		0966E0901F4C61BE00059C3A /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966E08E1F4C61BE00059C3A /* DesignableTextField.swift */; };
 		0966E0911F4C61BE00059C3A /* DesignableTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0966E08F1F4C61BE00059C3A /* DesignableTextField.xib */; };
 		09D05CB91F4C5CDA00E8142D /* DesignableTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D05CB71F4C5CDA00E8142D /* DesignableTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E162F61F8A384C0034CC1C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E162F51F8A384C0034CC1C /* UIColorExtension.swift */; };
+		09E162F81F8A38AD0034CC1C /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E162F71F8A38AD0034CC1C /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		09D05CB41F4C5CDA00E8142D /* DesignableTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignableTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D05CB71F4C5CDA00E8142D /* DesignableTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableTextField.h; sourceTree = "<group>"; };
 		09D05CB81F4C5CDA00E8142D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E162F51F8A384C0034CC1C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		09E162F71F8A38AD0034CC1C /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				0966E0881F4C61AF00059C3A /* StringExtension.swift */,
-				0966E0891F4C61AF00059C3A /* UITextFieldExtension.swift */,
+				09E162F51F8A384C0034CC1C /* UIColorExtension.swift */,
+				09E162F71F8A38AD0034CC1C /* UIImageViewExtension.swift */,
 				0966E08A1F4C61AF00059C3A /* UIViewExtension.swift */,
+				0966E0891F4C61AF00059C3A /* UITextFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 					09D05CB31F4C5CDA00E8142D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Q8M6V9HM9E;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -166,6 +173,8 @@
 			files = (
 				0966E08D1F4C61AF00059C3A /* UIViewExtension.swift in Sources */,
 				0966E08B1F4C61AF00059C3A /* StringExtension.swift in Sources */,
+				09E162F81F8A38AD0034CC1C /* UIImageViewExtension.swift in Sources */,
+				09E162F61F8A384C0034CC1C /* UIColorExtension.swift in Sources */,
 				0966E08C1F4C61AF00059C3A /* UITextFieldExtension.swift in Sources */,
 				0966E0901F4C61BE00059C3A /* DesignableTextField.swift in Sources */,
 			);
@@ -290,7 +299,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pronin.DesignableTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -309,7 +319,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pronin.DesignableTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
